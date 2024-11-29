@@ -36,6 +36,10 @@ export const metadata: Metadata = {
     title: "Reformify - Simple Form API for Developers",
     description:
       "Create and manage forms easily with Reformify's simple API. Affordable pricing with all features included.",
+    images: [
+      "https://utfs.io/f/STFL4gpOFkcnZDC9AejIMagKpNdJwY096SUAoQesExjzlihR",
+    ],
+    creator: "@imgarrettpost",
   },
   alternates: {
     canonical: "https://reformify.dev",

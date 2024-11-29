@@ -163,18 +163,18 @@ export default function Home() {
             }}
           />
         )}
-        <div className="flex flex-col items-center gap-8 font-merriweather justify-center min-h-screen">
+        <div className="flex flex-col items-center gap-8 font-merriweather justify-center min-h-screen px-4 sm:px-6 md:px-8">
           <img
             src="https://utfs.io/f/STFL4gpOFkcntBKcL5dVbQDo8T7RmK6aH09S5z4fXAqCGNPB"
             alt="Reformify Logo"
-            className="w-16 absolute top-8 left-1/2 -translate-x-1/2"
+            className="w-12 sm:w-14 md:w-16 absolute top-4 sm:top-6 md:top-8 left-1/2 -translate-x-1/2"
           />
-          <h1 className="text-8xl font-fredoka font-bold text-center px-12 leading-tight tracking-tight relative z-10 max-w-5xl">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-fredoka font-bold text-center leading-tight tracking-tight relative z-10 max-w-5xl">
             Make forms easy.
           </h1>
           <form
             onSubmit={handleSubmit}
-            className="flex w-[500px] p-4 rounded-xl items-center bg-foreground/90 backdrop-blur-sm z-50 border-accent border-2 shadow-lg hover:shadow-xl transition-shadow"
+            className="flex w-[90%] max-w-[500px] p-3 sm:p-4 rounded-xl items-center bg-foreground/90 backdrop-blur-sm z-50 border-accent border-2 shadow-lg hover:shadow-xl transition-shadow"
           >
             <input
               placeholder="Join the waitlist"
@@ -199,20 +199,20 @@ export default function Home() {
               type="email"
               disabled={submitted}
               aria-label="Email signup for Reformify waitlist"
-              className="flex-1 h-full text-2xl font-merriweather-sans bg-transparent focus:outline-none text-foreground px-4 cursor-text placeholder:text-background/70 placeholder-fade-in [&.placeholder-fade-out]:placeholder:opacity-0 [&.placeholder-fade-in]:placeholder:opacity-100 placeholder:transition-opacity placeholder:duration-200 disabled:opacity-50"
+              className="flex-1 h-full text-lg sm:text-xl md:text-2xl font-merriweather-sans bg-transparent focus:outline-none text-foreground px-2 sm:px-3 md:px-4 cursor-text placeholder:text-background/70 placeholder-fade-in [&.placeholder-fade-out]:placeholder:opacity-0 [&.placeholder-fade-in]:placeholder:opacity-100 placeholder:transition-opacity placeholder:duration-200 disabled:opacity-50"
             />
             <button
               type="submit"
               disabled={submitting || submitted || !email}
-              className="p-3 bg-accent rounded-lg text-xl hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
+              className="p-2 sm:p-3 bg-accent rounded-lg text-lg sm:text-xl hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
               aria-label="Submit email for waitlist"
             >
               {submitted ? <FaCheck /> : <FaArrowRight />}
             </button>
           </form>
-          <div className="absolute bottom-12 animate-bounce cursor-pointer hover:text-accent transition-colors">
+          <div className="absolute bottom-8 sm:bottom-10 md:bottom-12 animate-bounce cursor-pointer hover:text-accent transition-colors">
             <FaChevronDown
-              className="text-4xl"
+              className="text-2xl sm:text-3xl md:text-4xl"
               aria-label="Scroll down for more information"
             />
           </div>
@@ -231,27 +231,27 @@ export default function Home() {
             ></path>
           </svg>
           <div className="bg-[var(--foreground)] relative z-20 text-background">
-            <div className="flex px-24 py-32 justify-between items-center max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row px-4 sm:px-6 md:px-24 py-12 sm:py-16 md:py-32 justify-between items-center max-w-7xl mx-auto gap-8 sm:gap-10 md:gap-12">
               <img
                 src="https://utfs.io/f/STFL4gpOFkcnBmOh8X1RwMS74yxKeDvdaC08VYptEgrbcz6n"
                 alt="Form API illustration showing simple integration"
-                className="w-[40%] object-contain rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                className="w-full md:w-[40%] object-contain rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
               />
-              <div className="flex flex-col items-end gap-6 max-w-xl">
-                <h2 className="text-6xl font-fredoka font-bold leading-tight tracking-tight relative z-10">
+              <div className="flex flex-col items-center md:items-end gap-4 sm:gap-5 md:gap-6 max-w-xl">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-fredoka font-bold leading-tight tracking-tight relative z-10 text-center md:text-right">
                   Simple, easy form API.
                 </h2>
-                <p className="text-2xl font-merriweather text-right">
+                <p className="text-lg sm:text-xl md:text-2xl font-merriweather text-center md:text-right">
                   Send data to our backend using pre-made POST requests.
                 </p>
               </div>
             </div>
-            <div className="flex px-24 py-32 justify-between items-center max-w-7xl mx-auto">
-              <div className="flex flex-col items-start gap-6 max-w-xl">
-                <h2 className="text-6xl font-fredoka font-bold leading-tight tracking-tight relative z-10">
+            <div className="flex flex-col md:flex-row px-4 sm:px-6 md:px-24 py-12 sm:py-16 md:py-32 justify-between items-center max-w-7xl mx-auto gap-8 sm:gap-10 md:gap-12">
+              <div className="flex flex-col items-center md:items-start gap-4 sm:gap-5 md:gap-6 max-w-xl">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-fredoka font-bold leading-tight tracking-tight relative z-10 text-center md:text-left">
                   Full features, always.
                 </h2>
-                <p className="text-2xl font-merriweather">
+                <p className="text-lg sm:text-xl md:text-2xl font-merriweather text-center md:text-left">
                   We charge based on your form usage, nothing else. You&apos;ll
                   always have all features.
                 </p>
@@ -259,15 +259,15 @@ export default function Home() {
               <img
                 src="https://utfs.io/f/STFL4gpOFkcnR7EEdf95aljqWn2NMKmBDXUcdJZArLsi86Ox"
                 alt="Feature comparison showing all features included"
-                className="w-[40%] object-contain rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                className="w-full md:w-[40%] object-contain rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="flex px-24 py-32 justify-center items-center">
-              <div className="flex flex-col items-center gap-8 max-w-4xl">
-                <h2 className="text-7xl font-fredoka font-bold leading-tight tracking-tight text-center relative z-10">
+            <div className="flex px-4 sm:px-8 md:px-24 py-16 sm:py-24 md:py-32 justify-center items-center">
+              <div className="flex flex-col items-center gap-6 sm:gap-7 md:gap-8 max-w-4xl">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-fredoka font-bold leading-tight tracking-tight text-center relative z-10">
                   Why?
                 </h2>
-                <p className="text-2xl font-merriweather text-center leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl font-merriweather text-center leading-relaxed px-4">
                   Current form solutions are complex, expensive, and don&apos;t
                   lend themselves to very simple forms. We&apos;re here for the
                   ones developing apps, taking feedback, and responding to help
@@ -276,37 +276,43 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex px-24 py-32 justify-center items-center">
-              <div className="flex flex-col items-center gap-12 max-w-6xl w-full">
-                <h2 className="text-7xl font-fredoka font-bold leading-tight tracking-tight text-center relative z-10">
+            <div className="flex px-4 sm:px-8 md:px-24 py-16 sm:py-24 md:py-32 justify-center items-center">
+              <div className="flex flex-col items-center gap-8 sm:gap-10 md:gap-12 max-w-6xl w-full">
+                <h2 className="text-4xl sm:text-5xl md:text-7xl font-fredoka font-bold leading-tight tracking-tight text-center relative z-10">
                   Pricing
                 </h2>
-                <div className="relative w-full flex justify-center">
-                  <div className="flex flex-col items-center gap-6 p-8 bg-background text-foreground rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[500px]">
-                    <h3 className="text-4xl font-fredoka font-bold">Free</h3>
-                    <div className="text-6xl font-fredoka font-bold">$0</div>
-                    <ul className="flex flex-col gap-4 text-xl font-merriweather text-center">
+                <div className="relative w-full flex flex-col md:flex-row justify-center items-center gap-6 sm:gap-7 md:gap-8 px-4 sm:px-5 md:px-6">
+                  <div className="flex flex-col items-center gap-4 sm:gap-5 md:gap-6 p-6 sm:p-7 md:p-8 bg-background text-foreground rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-full max-w-[500px]">
+                    <h3 className="text-3xl sm:text-3xl md:text-4xl font-fredoka font-bold">
+                      Free
+                    </h3>
+                    <div className="text-4xl sm:text-5xl md:text-6xl font-fredoka font-bold">
+                      $0
+                    </div>
+                    <ul className="flex flex-col gap-3 sm:gap-3 md:gap-4 text-lg sm:text-xl md:text-xl font-merriweather text-center">
                       <li>50 submissions</li>
                       <li>Unlimited forms</li>
                       <li>All features included</li>
                     </ul>
                   </div>
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-4 p-6 bg-accent text-foreground rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-[300px]">
-                    <div className="text-3xl font-fredoka font-bold">+$5</div>
-                    <div className="text-xl font-merriweather text-center">
+                  <div className="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 flex flex-col items-center gap-3 sm:gap-3 md:gap-4 p-4 sm:p-5 md:p-6 bg-accent text-foreground rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 w-full max-w-[300px]">
+                    <div className="text-2xl sm:text-2xl md:text-3xl font-fredoka font-bold">
+                      +$5
+                    </div>
+                    <div className="text-lg sm:text-lg md:text-xl font-merriweather text-center">
                       per additional 1000 submissions
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-8 py-32">
-              <h2 className="text-7xl font-fredoka font-bold leading-tight tracking-tight text-center relative z-10">
+            <div className="flex flex-col items-center gap-6 sm:gap-7 md:gap-8 py-16 sm:py-24 md:py-32">
+              <h2 className="text-3xl sm:text-4xl md:text-8xl font-fredoka font-bold text-center px-4 md:px-12 leading-tight tracking-tight relative z-10 max-w-5xl">
                 Ready to get started?
               </h2>
               <form
                 onSubmit={handleSubmit}
-                className="flex w-[500px] p-4 rounded-xl items-center bg-background/90 backdrop-blur-sm z-50 border-accent border-2 shadow-lg hover:shadow-xl transition-shadow"
+                className="flex w-[90%] max-w-[500px] p-3 sm:p-4 rounded-xl items-center bg-background/90 backdrop-blur-sm z-50 border-accent border-2 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <input
                   placeholder="Join the waitlist"
@@ -331,26 +337,26 @@ export default function Home() {
                   type="email"
                   disabled={submitted}
                   aria-label="Email signup for Reformify waitlist"
-                  className="flex-1 h-full text-2xl font-merriweather-sans bg-transparent focus:outline-none text-background px-4 cursor-text placeholder:text-background/70 placeholder-fade-in [&.placeholder-fade-out]:placeholder:opacity-0 [&.placeholder-fade-in]:placeholder:opacity-100 placeholder:transition-opacity placeholder:duration-200 disabled:opacity-50"
+                  className="flex-1 h-full text-lg sm:text-xl md:text-2xl font-merriweather-sans bg-transparent focus:outline-none text-background px-2 sm:px-3 md:px-4 cursor-text placeholder:text-background/70 placeholder-fade-in [&.placeholder-fade-out]:placeholder:opacity-0 [&.placeholder-fade-in]:placeholder:opacity-100 placeholder:transition-opacity placeholder:duration-200 disabled:opacity-50"
                 />
                 <button
                   type="submit"
                   disabled={submitting || submitted || !email}
-                  className="p-3 bg-accent rounded-lg text-xl hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
+                  className="p-2 sm:p-3 bg-accent rounded-lg text-lg sm:text-xl hover:bg-opacity-90 transition-all hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100"
                   aria-label="Submit email for waitlist"
                 >
                   {submitted ? <FaCheck /> : <FaArrowRight />}
                 </button>
               </form>
             </div>
-            <footer className="flex flex-col items-center gap-1 pb-8">
+            <footer className="flex flex-col items-center gap-1 pb-6 sm:pb-7 md:pb-8 px-4">
               <a
                 href="/legal"
-                className="text-accent font-fredoka text-lg hover:underline"
+                className="text-accent font-fredoka text-base sm:text-lg hover:underline"
               >
                 Legal
               </a>
-              <div className="text-center font-fredoka text-lg">
+              <div className="text-center font-fredoka text-base sm:text-lg">
                 This is a website by{" "}
                 <a
                   href="https://garrett.one"
