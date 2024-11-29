@@ -154,6 +154,7 @@ export default function Home() {
               ...particlesOptions,
               particles: {
                 ...particlesOptions.particles,
+                // @ts-expect-error - particlesOptions is typed incorrectly
                 move: {
                   ...particlesOptions.particles.move,
                   direction: "none",
