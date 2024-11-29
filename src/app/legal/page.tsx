@@ -46,7 +46,9 @@ export default function Legal() {
               <p>
                 We collect only essential information needed to provide our
                 service, primarily your email address for account management and
-                communications.
+                communications. We also use Vercel Analytics to track the number
+                of visitors to our site - this data is anonymous and used solely
+                for understanding site traffic.
               </p>
 
               <h3 className="text-xl font-fredoka font-bold mt-8 mb-4">
@@ -54,9 +56,10 @@ export default function Legal() {
               </h3>
               <p>
                 We do not share, sell, or distribute your personal information
-                to third parties. The only exception is our use of SendGrid for
-                email communications, which requires your email address to
-                deliver important service updates and notifications.
+                to third parties. The only exceptions are our use of SendGrid
+                for email communications, which requires your email address to
+                deliver important service updates and notifications, and Vercel
+                Analytics for anonymous visitor counting.
               </p>
 
               <h3 className="text-xl font-fredoka font-bold mt-8 mb-4">

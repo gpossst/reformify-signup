@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fredoka, Merriweather_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "@/app/globals.css";
 
 const fredoka = Fredoka({
@@ -57,6 +58,7 @@ export default function RootLayout({
         className={`${fredoka.variable} ${merriweatherSans.variable} antialiased h-full`}
       >
         <div className="h-full">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
