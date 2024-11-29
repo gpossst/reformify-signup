@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     // Send welcome email
     const msg = {
       to: email,
-      from: "noreply@reformify.com",
+      from: "Reformify <noreply@reformify.dev>",
       subject: "Welcome to Reformify!",
       text: "Thank you for joining the Reformify waitlist! We'll keep you updated on our launch.",
       html: `
