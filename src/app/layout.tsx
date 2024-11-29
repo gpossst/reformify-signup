@@ -17,8 +17,29 @@ const merriweatherSans = Merriweather_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Formify",
-  description: "The form creation and monitoring tool",
+  title: "Reformify - Simple Form API for Developers",
+  description:
+    "Create and manage forms easily with Reformify's simple API. Affordable pricing with all features included.",
+  keywords:
+    "form api, form management, developer tools, web forms, api forms, simple forms",
+  openGraph: {
+    title: "Reformify - Simple Form API for Developers",
+    description:
+      "Create and manage forms easily with Reformify's simple API. Affordable pricing with all features included.",
+    type: "website",
+    images: [
+      "https://utfs.io/f/STFL4gpOFkcntBKcL5dVbQDo8T7RmK6aH09S5z4fXAqCGNPB",
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reformify - Simple Form API for Developers",
+    description:
+      "Create and manage forms easily with Reformify's simple API. Affordable pricing with all features included.",
+  },
+  alternates: {
+    canonical: "https://reformify.dev",
+  },
 };
 
 export default function RootLayout({
