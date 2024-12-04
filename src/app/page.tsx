@@ -4,6 +4,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { FaArrowRight, FaChevronDown, FaCheck } from "react-icons/fa";
 import Head from "next/head";
+import LaunchAnnouncement from "@/components/LaunchAnnouncement";
 
 export default function Home() {
   const [init, setInit] = useState(false);
@@ -164,10 +165,11 @@ export default function Home() {
           />
         )}
         <div className="flex flex-col items-center gap-8 font-merriweather justify-center min-h-screen px-4 sm:px-6 md:px-8">
+          <LaunchAnnouncement />
           <img
             src="https://utfs.io/f/STFL4gpOFkcntBKcL5dVbQDo8T7RmK6aH09S5z4fXAqCGNPB"
             alt="Reformify Logo"
-            className="w-12 sm:w-14 md:w-16 absolute top-4 sm:top-6 md:top-8 left-1/2 -translate-x-1/2"
+            className="w-12 sm:w-14 md:w-16 absolute top-4 sm:top-6 md:top-8 left-1/2 pt-12 -translate-x-1/2"
           />
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-fredoka font-bold text-center leading-tight tracking-tight relative z-10 max-w-5xl">
             Make forms easy.
